@@ -23,7 +23,7 @@ public:
 
     void Flush();
 
-    enum { e_maxVertices = 3 };
+    enum { e_maxVertices = 3 * 64 };
     b2Vec2 m_vertices[e_maxVertices];
     b2Color m_colors[e_maxVertices];
 

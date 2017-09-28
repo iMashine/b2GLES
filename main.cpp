@@ -10,9 +10,6 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     QSurfaceFormat format;
-//    format.setDepthBufferSize(24);
-//    format.setSamples(4);
-//    format.setProfile(QSurfaceFormat::CoreProfile);
     QSurfaceFormat::setDefaultFormat(format);
 
     app.setApplicationName("b2GLES");
@@ -20,7 +17,6 @@ int main(int argc, char *argv[])
 
     MainWidget widget;
     widget.setFocusPolicy(Qt::ClickFocus);
-//    MainOpenGLWidget widget;
     widget.resize(800, 600);
     widget.showMaximized();
 
